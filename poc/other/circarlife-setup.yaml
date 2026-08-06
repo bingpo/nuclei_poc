@@ -16,7 +16,7 @@ info:
     shodan-query: title:"- setup" html:"Modem setup"
   tags: scada,circontrol,circarlife,setup,exposure,panel,installer
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}/html/setup.html"
