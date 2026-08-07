@@ -10,12 +10,16 @@ info:
     cwe-id: CWE-200
     cpe: cpe:2.3:o:sophos:sfos:*:*:*:*:*:*:*:*
   metadata:
-    max-request: 2
-    product: sfos
-    shodan-query: title:"Sophos"
-    vendor: sophos
     verified: true
-  tags: panel,sophos
+    max-request: 2
+    vendor: sophos
+    product: sfos
+    shodan-query:
+      - title:"Sophos"
+      - http.title:"sophos"
+    fofa-query: title="sophos"
+    google-query: intitle:"sophos"
+  tags: panel,sophos,discovery
 
 http:
   - method: GET
@@ -44,4 +48,4 @@ http:
         group: 1
         regex:
           - 'href="\/themes\/lite1\/css\/typography\.css\?version=(([0-9a-z]+)([0-9.]+))'
-# digest: 4a0a0047304502202814e7a3899be80aa8ce2c8c8e942fa9c106da8f7d731ab23e0f9821e2edd3c20221009337ec4f5fe4e7b1031bad7f0e7fbd3f1dae431ca9583005ac82124759f009ca:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a00473045022100c6bdb86a57c0b1a885994f8c77e5a41dddab8f7effaca4276a579bebdfca41990220695f63b7fcd7c1fbd7517782bb275a075f8caff4ae5126792b1e495d365cce19:922c64590222798bb761d5b6d8e72950

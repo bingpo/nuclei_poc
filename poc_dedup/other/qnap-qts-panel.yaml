@@ -13,13 +13,19 @@ info:
     cwe-id: CWE-200
     cpe: cpe:2.3:o:qnap:qts:*:*:*:*:*:*:*:*
   metadata:
-    google-query: intitle:"QNAP Turbo NAS" inurl:/cgi-bin
-    max-request: 2
-    product: qts
-    shodan-query: product:"QNAP"
-    vendor: qnap
     verified: true
-  tags: panel,qnap,qts
+    max-request: 2
+    vendor: qnap
+    product: qts
+    shodan-query:
+      - product:"QNAP"
+      - product:"qnap"
+      - http.title:"qnap turbo nas" inurl:/cgi-bin
+    google-query:
+      - intitle:"QNAP Turbo NAS" inurl:/cgi-bin
+      - intitle:"qnap turbo nas" inurl:/cgi-bin
+    fofa-query: title="qnap turbo nas" inurl:/cgi-bin
+  tags: panel,qnap,qts,discovery
 
 http:
   - method: GET
@@ -41,4 +47,4 @@ http:
       - type: status
         status:
           - 200
-# digest: 4a0a00473045022075fc5f317682d5292041379c454431b24e86b6d2200816db375f6ebb656f39df022100cf55ec6c064f81b67143fdfbb49a393900f22378a4bb2a8c4e6405299689dcea:922c64590222798bb761d5b6d8e72950
+# digest: 4b0a00483046022100d0a153cd2c5051b3145882c97d23bebfa6270701985e2621d9c54c20275f1e460221008eb5dd3cadc16a5a0b4f8c335f1047d73def0ce32f3cac1341e33d6e75c9b844:922c64590222798bb761d5b6d8e72950

@@ -8,10 +8,13 @@ info:
   classification:
     cvss-metrics: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N
     cwe-id: CWE-200
+    cpe: cpe:2.3:a:gespage:gespage:*:*:*:*:*:*:*:*
   metadata:
     max-request: 1
     shodan-query: Path=/gespage
-  tags: panel,gespage
+    product: gespage
+    vendor: gespage
+  tags: panel,gespage,discovery
 
 http:
   - method: GET
@@ -37,4 +40,4 @@ http:
         group: 1
         regex:
           - '\(Ver: ([0-9._A-Z]+)\)'
-# digest: 4b0a00483046022100d20b00086db21ff195dee775541b0facbe564d263d6d25d7b8f2ef1c29a91ea1022100f7609b6300e08f9f42133fcd54a65543d0dad7facf2ecfa2297d4b7b2afda48e:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a00473045022052c9b26f37d674daa0512c7c2a2be4fe37b182104ae89b35c4cb2cffac37d781022100dd445ef9c36b00c87f520004d7707b1fc1525c25ddfd9db4c9d8b51186cb619a:922c64590222798bb761d5b6d8e72950

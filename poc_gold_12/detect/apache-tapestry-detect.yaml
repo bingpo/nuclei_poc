@@ -7,14 +7,13 @@ info:
   metadata:
     fofa-query: app="APACHE-Tapestry"
   tags: apache,tapestry,tech
-  mongoid: 0000
 
 requests:
   - method: GET
     path:
       - "{{BaseURL}}"
 
-    redirects: true
+    host-redirects: true
     max-redirects: 2
     matchers:
       - type: word
