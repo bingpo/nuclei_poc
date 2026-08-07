@@ -9,7 +9,7 @@ info:
     - https://github.com/EdOverflow/can-i-take-over-xyz/issues/154
   metadata:
     max-request: 1
-  tags: takeover,gemfury,vuln
+  tags: takeover,gemfury
 
 http:
   - method: GET
@@ -34,4 +34,4 @@ http:
       - type: dsl
         dsl:
           - cname
-# digest: 4a0a004730450221009f685ed1f42ce0d169e9f9665d564785efa65dec5d4b14a468f2639dc381a2b602201fd6fb9eae7e68690d7f40c8cc92f89c213491b059482f8c432be5ca434f96a2:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a004730450220571a355c4f9008ce201f21b3909279c6d8dfd3002c250a5348cbbc981c81664002210089aba03c22651f2780f423c98b7958e0f104faa410c9d42c05c192e3ae32b6e3:922c64590222798bb761d5b6d8e72950

@@ -18,7 +18,7 @@ info:
       - http.title:"kibana"
     fofa-query: title="kibana"
     google-query: intitle:"kibana"
-  tags: panel,kibana,elastic,discovery
+  tags: panel,kibana,elastic
 
 http:
   - method: GET
@@ -45,4 +45,4 @@ http:
         part: header
         regex:
           - '(?i)(Kbn-Name)'
-# digest: 4a0a00473045022066350a8e779074c2cd2b4905f3f795dfc70a901810df0818eddc44f5f527f48e022100e571328d43d51d65d996b9317ee8b404404bd4e55d600863e3b789fd0d90fa5b:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a0047304502210091ba187fa1e4fc800eec07189b02e8c2ac6a396a910e09edbcdb0265d8cc1ed102203e6e203e220b65848e17f2f05f0e4a56b56b089de71c4de58c8aa8f5da2d62bf:922c64590222798bb761d5b6d8e72950

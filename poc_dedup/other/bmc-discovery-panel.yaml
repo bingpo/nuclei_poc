@@ -14,7 +14,7 @@ info:
     verified: true
     max-request: 1
     shodan-query: http.title:"BMC Software"
-  tags: panel,bmc,discovery
+  tags: panel,bmc
 
 http:
   - method: GET
@@ -40,4 +40,4 @@ http:
         group: 1
         regex:
           - '<span class="logo-version">Version ([0-9.]+)'
-# digest: 4a0a004730450220411155147e3bf68e9f234e00f62e23bfa63f330174cbaac9898a66481131f076022100dbebdd365f8df2029d838027ada8deead020e189128c3dfed7c8e8287f9d082c:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a00473045022100f1633424a257ed110a2aabae8f8009bbed533db9d2a7ffc5d43ee8b4c5e9180f02200deb2a0ffac69838d4ab5a607cb4e56ed2f838bce2b10f0774ae412a112b9481:922c64590222798bb761d5b6d8e72950

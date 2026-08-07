@@ -18,7 +18,7 @@ info:
     product: harbor
     shodan-query: http.favicon.hash:657337228
     fofa-query: icon_hash=657337228
-  tags: panel,harbor,linuxfoundation,detect,login,discovery
+  tags: panel,harbor,linuxfoundation,detect,login
 
 http:
   - method: GET
@@ -42,4 +42,4 @@ http:
         group: 1
         regex:
           - '(?i)"harbor_version":\s*"([a-z0-9.\-]+)"'
-# digest: 4a0a00473045022051ebf02e5d694b84f43fc9ea8cc6a87e074e9a9d7186ac6f5bf37672edfc565802210097579cf9da3d9fabfb2294e9846ec66f5bcc8469bae269e954276da22baf1d16:922c64590222798bb761d5b6d8e72950
+# digest: 490a0046304402200a08568196b27c6106e1dac397ce1a1d030663bc1b7dcc8c11f85bf61072f9e502201cd675e0474af3c17b2efdfebf898e1491fdd574d486a1f2f4d345a1fa41704b:922c64590222798bb761d5b6d8e72950

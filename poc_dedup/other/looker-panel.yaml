@@ -12,7 +12,7 @@ info:
     verified: true
     max-request: 1
     shodan-query: http.html:"lookerVersion"
-  tags: panel,login,looker,discovery
+  tags: panel,login,looker
 
 http:
   - method: GET
@@ -37,4 +37,4 @@ http:
         group: 1
         regex:
           - "lookerVersion: '([0-9.]+)',"
-# digest: 4b0a00483046022100c8cf7e17a8b39454ac9f3093e0b1920658838ae3749b7f5ebc98fa6243822e4a022100886d72d9f80aa6017fbe281f3ccd839181c5e65472d5f6965688332501d59438:922c64590222798bb761d5b6d8e72950
+# digest: 490a00463044022005fd2e2adb29d3a8caa8a9cb326ea376d55ce08ecaeed7f263fecdd33d763ebe022035f92ec233d80047a5c1ba00706ebebf6c45cc4885e39fcb242800c272df239a:922c64590222798bb761d5b6d8e72950

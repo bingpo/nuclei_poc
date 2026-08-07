@@ -2,7 +2,7 @@ id: wazuh-panel
 
 info:
   name: Wazuh Login Panel
-  author: cyllective,daffainfo,idealphase
+  author: cyllective,daffainfo
   severity: info
   description: Wazuh - The Open Source Security Platform
   reference:
@@ -18,7 +18,7 @@ info:
       - http.title:"wazuh"
     fofa-query: title="wazuh"
     google-query: intitle:"wazuh"
-  tags: panel,wazuh,login,discovery
+  tags: panel,wazuh,login
 
 http:
   - method: GET
@@ -45,5 +45,5 @@ http:
         part: body
         group: 1
         regex:
-          - '&quot;(?:version|wazuhVersion)&quot;:&quot;([0-9.]+)&quot;'
-# digest: 4a0a004730450220763fe8f1a0a744acb5724b17ab3922715307ee3890c28ded8575b671d4786633022100e7b414950bf1d0d7c2258a7e8953a4036621bde3da60c1038d08bae07df058a1:922c64590222798bb761d5b6d8e72950
+          - '&quot;version&quot;:&quot;([0-9.]+)&quot;'
+# digest: 490a0046304402201e4f450bae04aeaacdade830ad42bc091af8ca8defad12ca7aa0bc3afaba421202206fbf77d7bc6c9dea64d3ffa12b6cebe8cb0f215c2d8119988414d39d68adb81d:922c64590222798bb761d5b6d8e72950
