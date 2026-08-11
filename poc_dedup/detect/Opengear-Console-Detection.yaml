@@ -1,9 +1,9 @@
-id: Opengear-Console-Detection
+id: Opengear Console Detection
 info:
   author: notnotnotveg
   name: Opengear Console Detection
-  severity: info
-requests:
+  severity: informative
+http:
 - matchers:
   - part: body
     type: word

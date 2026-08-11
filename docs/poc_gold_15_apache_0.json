@@ -1,1 +1,1 @@
-["APACHE-Ambari-weakPass.yaml","apache-guacamole.yaml","apache-server-info.yaml"]
+["APACHE-Ambari-weakPass.yaml","apache-axis-detect.yaml","apache-cocoon-detect.yaml","apache-server-info.yaml","apache-solr-ssrf.yaml","apache-spark-enviroment-exposure.yaml","apache-tapestry-detect.yaml"]
