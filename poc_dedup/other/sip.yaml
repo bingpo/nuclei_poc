@@ -1,17 +1,14 @@
 id: sip
 info:
-  name: BT Home Hub $1 SIP
+  name: Microsoft Live SIP client
   author: nmap,cn-kali-team
   tags: detect,tech,sip,service
   severity: info
   metadata:
-    device_type: VoIP adapter
     fallback:
     - get-request
-    - httpoptions
-    info: 'serial: $3'
+    operating_system: Windows
     rarity: 5
-    version: $2
 tcp:
 - name: sipoptions
   inputs:
@@ -23,4 +20,4 @@ tcp:
   - name: sip
     type: regex
     regex:
-    - '(?i)^SIP/2\.0 500 Server Internal Error\r\n(?:[^\r\n]+\r\n)*?User-Agent: BT Home Hub ([\w._-]+) Build ([\w._-]+)\r\nX-Serialnumber: (\w+)\r\n'
+    - (?i)^SIP/2\.0 400 Invalid Contact information\r\n.*received=[\d.]+;ms-received-port=\d+;ms-received-cid=\d+\r\n
