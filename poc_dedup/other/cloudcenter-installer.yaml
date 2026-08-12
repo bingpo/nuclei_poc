@@ -3,7 +3,7 @@ id: cloudcenter-installer
 info:
   name: CloudCenter Installer Exposure
   author: pussycat0x
-  severity: unknown
+  severity: high
   description: CloudCenter is susceptible to the Installation page exposure due to misconfiguration.
   classification:
     cpe: cpe:2.3:a:cisco:cloudcenter:*:*:*:*:*:*:*:*
@@ -13,7 +13,7 @@ info:
     vendor: cisco
     product: cloudcenter
     shodan-query: title:"CloudCenter Installer"
-  tags: misconfig,cisco,cloudcenter,install,exposure
+  tags: misconfig,cisco,cloudcenter,install,exposure,vuln
 
 http:
   - method: GET
@@ -30,4 +30,4 @@ http:
       - type: status
         status:
           - 200
-# digest: 4b0a00483046022100ae918830ed712aab3febcb08100ef9cc0de0fb74d908a249e2676c9abd437a06022100bfa9c781c10ace044207f30dd44dc6d2d829379d7083ac0be25e78138c326007:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a00473045022100fa8e2089c1fdaff13185e3a14c7050e73ecd8fd1de42dce36620214c7c558d8f02202af5e6fbf1d9a268d6da1ec8c14d3d3bebc6f84a4a02b5181a9bebd1ebdfc321:922c64590222798bb761d5b6d8e72950
