@@ -1,1 +1,1 @@
-["oracle-fatwire-lfi.yaml","oracle-siebel-xss.yaml","xss-oracle.yaml"]
+["custom-oracle-ebs-ACPV-detect.yaml","custom-oracle-ebs-path-normalise-detect.yaml","oracle-ebusiness-openredirect.yaml"]
