@@ -1,1 +1,1 @@
-["header-blind-ssrf.yaml","http-headers-cross-origin-embedder-policy.yaml","http-missing-security-headers.yaml","jfrog-version-header.yaml","reflect-xss-header.yaml","xss-deprecated-header-detect.yaml"]
+["header-blind-ssrf.yaml","header-command-injection.yaml","host-header-injection.yaml"]
