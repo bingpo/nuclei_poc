@@ -1,15 +1,15 @@
-id: attendance-manager-89956d8623eb2ad4d4f784cfe504817a
+id: attendance-manager
 
 info:
   name: >
-    Attendance Manager <= 0.6.2 - Authenticated (Contributor+) Stored Cross-Site Scripting
+    Attendance Manager <= 0.5.6 - Cross-site Request Forgery
   author: topscoder
   severity: low
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/1ac42a0f-19e9-4ce2-9708-d7aff1609c47?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/1d7440ae-f939-478c-8861-57020537dd44?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 
@@ -56,4 +56,4 @@ http:
 
       - type: dsl
         dsl:
-          - compare_versions(version, '<= 0.6.2')
+          - compare_versions(version, '<= 0.5.6')
