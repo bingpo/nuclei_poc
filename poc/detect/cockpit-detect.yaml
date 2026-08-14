@@ -6,7 +6,7 @@ info:
   severity: info
   metadata:
     max-request: 1
-  tags: tech,cockpit
+  tags: tech,cockpit,discovery
 
 http:
   - method: GET
@@ -17,5 +17,4 @@ http:
       - type: word
         words:
           - "<title>Authenticate Please!</title>"
-
-# digest: 490a0046304402201f4f3840ba454502e2c10830e209c9d25be1e62e5d12934cbe3ed7300029490e02201d68ba471fe94afa6c88831401a298c35605d0a9bff97a80c40b98d988aba31b:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a0047304502205577a4e38d28574edc729ea119573d7566344da671ad7620329f87986dad9409022100bf232a4408b8a1ad7aa6e8e02d554fef8e54ea2d60d1350779567226a80fc2b7:922c64590222798bb761d5b6d8e72950
