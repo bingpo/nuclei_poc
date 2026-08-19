@@ -4,14 +4,10 @@ info:
   name: Apache HTTP Server Test Page
   author: dhiyaneshDk
   severity: info
-  classification:
-    cpe: cpe:2.3:a:apache:http_server:*:*:*:*:*:*:*:*
   metadata:
     max-request: 1
-    vendor: apache
-    product: http_server
     shodan-query: http.title:"Apache HTTP Server Test Page powered by CentOS"
-  tags: tech,apache,discovery
+  tags: tech,apache
 
 http:
   - method: GET
@@ -23,4 +19,5 @@ http:
         words:
           - "<title>Apache HTTP Server Test Page powered by CentOS</title>"
         part: body
-# digest: 4a0a00473045022100da8b348377e9ac3795d2d270e22f400fd7be86c665895e2a30cfe3769ac7f47202203963490f65db8970ba9e543f4c45fbe384bd548e54745fd4689225f2dae343a9:922c64590222798bb761d5b6d8e72950
+
+# digest: 490a004630440220467bbb3dc60687ff2f264d427b2bbef67eaf91265d2792c09daa9032b6fa344802204ffb8d5ea0e7243efd0a890758cf097189637da7837623d9d55956ef739fc474:922c64590222798bb761d5b6d8e72950

