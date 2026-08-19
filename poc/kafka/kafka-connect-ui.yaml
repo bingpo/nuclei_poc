@@ -7,11 +7,12 @@ info:
   description: Apache Kafka Connect UI login panel was detected.
   classification:
     cvss-metrics: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N
-    cvss-score: 0.0
     cwe-id: CWE-200
-  tags: panel,kafka,apache
+  metadata:
+    max-request: 1
+  tags: panel,kafka,apache,discovery
 
-requests:
+http:
   - method: GET
     path:
       - '{{BaseURL}}'
@@ -20,5 +21,4 @@ requests:
       - type: word
         words:
           - '<title>Kafka Connect UI</title>'
-
-# Enhanced by md on 2022/11/22
+# digest: 490a00463044022068c7b33c93b1338e29b1f0316e32f2b634f1fa983ad8415751b02f110b294ae40220031069a115168b4aae6f20404dc8847775ad9379d2f0c7026fcb9e8ce7e70b7c:922c64590222798bb761d5b6d8e72950

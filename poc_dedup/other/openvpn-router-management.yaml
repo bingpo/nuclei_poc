@@ -23,7 +23,7 @@ info:
       - body="router management - server openvpn"
       - title="openvpn-admin"
     google-query: intitle:"openvpn-admin"
-  tags: panel,openvpn,router
+  tags: panel,openvpn,router,discovery
 
 http:
   - method: GET
@@ -40,4 +40,4 @@ http:
       - type: status
         status:
           - 200
-# digest: 490a0046304402204f6fe88f487869d91746d7fa7b97d60c6c2d4a4be570df1e87218b3d8840891602204e4c563694987cbb493f8ce4e3b228a15d116e1739d695750f9bfc67497a9ee6:922c64590222798bb761d5b6d8e72950
+# digest: 490a00463044022025605704a7a1dd5d397c92934c45c61f2f4ceeb10dfed028fa679e79a6209c23022027fa2750fdfb9e420a57b71b4791c9ce5e19968a361c15552ec9fa3668ffb3ad:922c64590222798bb761d5b6d8e72950

@@ -15,7 +15,7 @@ info:
     product: on-premises_installation
     vendor: structurizr
     fofa-query: icon_hash=1199592666
-  tags: structurizr,default-login
+  tags: structurizr,default-login,vuln
 
 http:
   - raw:
@@ -61,4 +61,4 @@ http:
         regex:
           - 'name="_csrf" value="([0-9a-z-]+)"'
         internal: true
-# digest: 4a0a00473045022016aa85f49f5226bbeceb6908dae2fe5c9f9e4bea974ea8033fc2df4d8009515c022100d58b7a86bb985ee3cdae003b41130d3d9f3aca9396e309bb83d63da4a2ca59bd:922c64590222798bb761d5b6d8e72950
+# digest: 4b0a00483046022100e2b7cc2c2b2ddb1622f0b084cee0551a907cc555520d19c2bae219ae7565a19c022100eb9d7ccb2a0d82328996f59c6237a1625b80c2bc01afa1f93441a1bee5a6170e:922c64590222798bb761d5b6d8e72950

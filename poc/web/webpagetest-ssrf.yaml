@@ -10,13 +10,14 @@ info:
     - https://github.com/WPO-Foundation/webpagetest
   classification:
     cpe: cpe:2.3:a:webpagetest:webpagetest:*:*:*:*:*:*:*:*
+    cwe-id: CWE-918
   metadata:
     verified: true
     max-request: 1
     vendor: webpagetest
     product: webpagetest
     shodan-query: title:"WebPageTest"
-  tags: ssrf,webpagetest,oast
+  tags: ssrf,webpagetest,oast,vuln
 
 http:
   - method: GET
@@ -33,4 +34,4 @@ http:
         part: interactsh_protocol
         words:
           - "http"
-# digest: 4a0a0047304502200759485b672d8d043603e79d77b4765b88996dc469c65303c02e474c2fe38d4e0221008b4973b8db926d297651c1449ac52ae55b927f590821f5add7cbdff85065326b:922c64590222798bb761d5b6d8e72950
+# digest: 490a004630440220484eb1954c120ed3fa00d22042fd9a718a8d3053898c5c2bc221a881eba95eb0022007997df62b25aca2ee1aee2bcdb59a36ea32b84d1cfe16f58f3013e6374fd139:922c64590222798bb761d5b6d8e72950

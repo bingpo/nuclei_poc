@@ -10,14 +10,18 @@ info:
     - https://github.com/kareadita/kavita
   classification:
     cvss-metrics: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N
-    cvss-score: 0.0
     cwe-id: CWE-200
   metadata:
     verified: true
+    max-request: 1
     shodan-query: http.title:"kavita"
-  tags: panel,kavita
+    product: kavita
+    vendor: kavitareader
+    fofa-query: title="kavita"
+    google-query: intitle:"kavita"
+  tags: panel,kavita,discovery
 
-requests:
+http:
   - method: GET
     path:
       - "{{BaseURL}}/login"
@@ -32,5 +36,4 @@ requests:
       - type: status
         status:
           - 200
-
-# Enhanced by md on 2022/11/22
+# digest: 4a0a0047304502205a9b2b4bdc89fdad0cdac7014043a9918d742272d8c1db9ebc4be07e70822fa0022100a076a43c4362408474e3d2dba302f77a9a699f2eee15e127fc4cac8dd5549c7c:922c64590222798bb761d5b6d8e72950

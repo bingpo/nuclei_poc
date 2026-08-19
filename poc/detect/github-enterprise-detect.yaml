@@ -7,14 +7,19 @@ info:
   description: Github Enterprise login panel was detected.
   classification:
     cvss-metrics: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N
-    cvss-score: 0.0
     cwe-id: CWE-200
+    cpe: cpe:2.3:a:github:enterprise_server:*:*:*:*:*:*:*:*
   metadata:
     verified: true
-    shodan-query: title:"Setup GitHub Enterprise"
-  tags: panel,github
+    max-request: 1
+    vendor: github
+    product: enterprise_server
+    shodan-query:
+      - title:"Setup GitHub Enterprise"
+      - micro focus dsd
+  tags: panel,github,discovery
 
-requests:
+http:
   - method: GET
     path:
       - "{{BaseURL}}/login"
@@ -25,5 +30,4 @@ requests:
       - type: word
         words:
           - "GitHub · Enterprise"
-
-# Enhanced by md on 2022/11/15
+# digest: 4b0a00483046022100bc5e5a4d47fa41966784d178db37e585132333aa9b2e243a019810d8c3b8b8ec0221009404492ffc37edbf8fd88788a8647c3d060e9fc473bb10a9a94caab66ee0c35e:922c64590222798bb761d5b6d8e72950

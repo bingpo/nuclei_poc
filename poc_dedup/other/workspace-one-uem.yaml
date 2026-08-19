@@ -9,14 +9,20 @@ info:
     - https://twitter.com/Jhaddix/status/1295861505963909120
   classification:
     cvss-metrics: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N
-    cvss-score: 0.0
     cwe-id: CWE-200
+    cpe: cpe:2.3:a:vmware:workspace_one_uem:*:*:*:*:*:*:*:*
   metadata:
     verified: true
-    shodan-query: http.html:"Airwatch"
-  tags: panel,workspaceone,vmware
+    max-request: 1
+    vendor: vmware
+    product: workspace_one_uem
+    shodan-query:
+      - http.html:"Airwatch"
+      - http.html:"airwatch"
+    fofa-query: body="airwatch"
+  tags: panel,workspaceone,vmware,discovery
 
-requests:
+http:
   - method: GET
     path:
       - "{{BaseURL}}/AirWatch/Login"
@@ -26,8 +32,6 @@ requests:
         part: body
         words:
           - "About VMware AirWatch"
-          - 'content="AirWatch'
           - "/AirWatch/Images"
         condition: or
-
-# Enhanced by md on 2023/01/25
+# digest: 4a0a00473045022100f4445604a8da4ab2fe05c028120da16041660308b12f530cc895ad4d1044697a02203832f967318d30994139a72ed29779d5eadcdcb00af0155bacd08e85e47dd600:922c64590222798bb761d5b6d8e72950

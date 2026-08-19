@@ -11,10 +11,19 @@ info:
     cpe: cpe:2.3:a:icinga:icinga_web_2:*:*:*:*:*:*:*:*
   metadata:
     max-request: 1
-    product: icinga_web_2
-    shodan-query: http.title:"Icinga Web 2 Login"
     vendor: icinga
-  tags: panel,icinga
+    product: icinga_web_2
+    shodan-query:
+      - http.title:"Icinga Web 2 Login"
+      - http.title:"icinga"
+      - http.title:"icinga web 2 login"
+    fofa-query:
+      - title="icinga web 2 login"
+      - title="icinga"
+    google-query:
+      - intitle:"icinga web 2 login"
+      - intitle:"icinga"
+  tags: panel,icinga,discovery
 
 http:
   - method: GET
@@ -30,4 +39,4 @@ http:
       - type: status
         status:
           - 200
-# digest: 4a0a0047304502210084c2c72c9f1624219006b84375145672437c212cd287e29ccf146599b4917f2002204b1d5d87ae8bc730817c1c53418e9160a1b702e818d564dd8234df1121fde4ae:922c64590222798bb761d5b6d8e72950
+# digest: 490a00463044022046e1c5b394960a4335f824a24b25563c852cad82fad62671f4fc32226aa26c75022058ef5bc102cc8349ebdd4dbf6445d2f06faec8bf0bc78a70e45660678658c0dc:922c64590222798bb761d5b6d8e72950

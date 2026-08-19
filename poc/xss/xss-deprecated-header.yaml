@@ -10,17 +10,19 @@ info:
     - https://owasp.org/www-project-secure-headers/#x-xss-protection
   classification:
     cvss-metrics: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N
-    cvss-score: 0.0
-  tags: xss,misconfig,generic
+    cvss-score: 0
+    cwe-id: CWE-79
+  metadata:
+    max-request: 1
+  tags: xss,misconfig,generic,vuln
 
-requests:
+http:
   - method: GET
     path:
       - "{{BaseURL}}"
 
     matchers-condition: and
     matchers:
-
       - type: regex
         part: header
         regex:
@@ -37,5 +39,4 @@ requests:
         part: header
         kval:
           - x_xss_protection
-
-# Enhanced by mp on 2022/09/15
+# digest: 4a0a00473045022100b743803e263c76218a25c17e35653994e5031450b736caaf8de40fed94ae0e6402202bfcf67e497100ab99f58b335b037142188806590ff3df931021a4796631bbb7:922c64590222798bb761d5b6d8e72950

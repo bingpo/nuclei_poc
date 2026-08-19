@@ -10,11 +10,12 @@ info:
     - https://flowci.github.io/#/
   classification:
     cvss-metrics: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N
-    cvss-score: 0.0
     cwe-id: CWE-200
-  tags: panel,flowci
+  metadata:
+    max-request: 1
+  tags: panel,flowci,discovery
 
-requests:
+http:
   - method: GET
     path:
       - '{{BaseURL}}'
@@ -28,5 +29,4 @@ requests:
       - type: status
         status:
           - 200
-
-# Enhanced by md on 2022/11/15
+# digest: 4a0a0047304502204d87a0f77beb0a64bc161d42a19d1e825d32094acfef6fe42ed1452f08c06590022100c9d1627be9a83036526acd2ef27d5272b2eaefa397f42b202253e11cad793866:922c64590222798bb761d5b6d8e72950

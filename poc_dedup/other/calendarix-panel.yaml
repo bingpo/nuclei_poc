@@ -7,11 +7,12 @@ info:
   description: Calendarix admin login panel was detected.
   classification:
     cvss-metrics: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N
-    cvss-score: 0.0
     cwe-id: CWE-200
-  tags: panel,calendarix,login
+  metadata:
+    max-request: 2
+  tags: panel,calendarix,login,discovery
 
-requests:
+http:
   - method: GET
     path:
       - '{{BaseURL}}/calendarix/admin/cal_login.php'
@@ -22,8 +23,8 @@ requests:
       - type: status
         status:
           - 200
+
       - type: word
         words:
           - 'Calendarix Admin Login'
-
-# Enhanced by md on 2022/11/02
+# digest: 4b0a00483046022100cd0250d90903d6b9ac650455705f6005d5be97d1ce3e37741f14032e3244975f022100c88485e03ee4be3fa12f9219122a667db4e4005f9eaaa36d35a7969c644f134a:922c64590222798bb761d5b6d8e72950

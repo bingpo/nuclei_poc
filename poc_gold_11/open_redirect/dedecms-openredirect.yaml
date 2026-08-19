@@ -11,12 +11,16 @@ info:
     cvss-metrics: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
     cvss-score: 6.1
     cwe-id: CWE-601
+    cpe: cpe:2.3:a:dedecms:dedecms:*:*:*:*:*:*:*:*
   metadata:
     verified: true
+    max-request: 1
     shodan-query: http.html:"power by dedecms" || title:"dedecms"
-  tags: dedecms,redirect
+    product: dedecms
+    vendor: dedecms
+  tags: dedecms,redirect,vuln
 
-requests:
+http:
   - method: GET
     path:
       - "{{BaseURL}}/plus/download.php?open=1&link=aHR0cHM6Ly9pbnRlcmFjdC5zaA=="
@@ -31,5 +35,4 @@ requests:
       - type: status
         status:
           - 302
-
-# Enhanced by md on 2022/10/14
+# digest: 4a0a004730450221009f0e02299ccd14e63151388594d3427c28c945f98371081a2a57aa93144ef73702206642041203de22d7e7d64a21f68e2876f9157babdf6805d5368d8da0b60f4353:922c64590222798bb761d5b6d8e72950

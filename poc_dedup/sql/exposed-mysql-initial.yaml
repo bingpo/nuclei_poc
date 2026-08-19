@@ -9,11 +9,13 @@ info:
     - https://hackerone.com/reports/1081817
   classification:
     cvss-metrics: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N
-    cvss-score: 0.0
+    cvss-score: 0
     cwe-id: CWE-200
-  tags: config,exposure,hackerone
+  metadata:
+    max-request: 1
+  tags: config,exposure,hackerone,vuln
 
-requests:
+http:
   - method: GET
     path:
       - "{{BaseURL}}/mysql.initial.sql"
@@ -28,5 +30,4 @@ requests:
       - type: status
         status:
           - 200
-
-# Enhanced by mp on 2023/02/05
+# digest: 490a0046304402201b05c79ba805897082842fa65a06625196c3ff99c7e07304f3f372dd60bf57f70220095272a59dc72df6050f95be7905001a921b0e69b3265463d6804afc10796457:922c64590222798bb761d5b6d8e72950

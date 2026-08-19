@@ -14,7 +14,7 @@ info:
     cwe-id: CWE-77
   metadata:
     max-request: 1
-  tags: spark,unauth
+  tags: spark,unauth,vuln
 
 http:
   - method: GET
@@ -33,5 +33,4 @@ http:
           - "serverSparkVersion"
         part: body
         condition: and
-
-# digest: 4a0a00473045022018b659baec610f87c26890d0fb5845caeb74f982b891f1d7962fc76f1cc74819022100fbbd51799d7374a2ec8d0ce526872a8541093e2d98a549188fca7c8890f25681:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a00473045022100ad070edf2016fe56f99c72bab062e82b3d28d08f8af3a86eee69e2953f6af78102204b939f12a57df30728c36586e110498f705ab3ceee0704a01bd39dd32b92c5d7:922c64590222798bb761d5b6d8e72950

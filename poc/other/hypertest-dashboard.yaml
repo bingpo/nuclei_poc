@@ -15,7 +15,7 @@ info:
     verified: true
     max-request: 1
     shodan-query: title:"HyperTest"
-  tags: panel,exposure,hypertest
+  tags: panel,exposure,hypertest,discovery
 
 http:
   - method: GET
@@ -35,4 +35,4 @@ http:
         part: header
         words:
           - 'text/html'
-# digest: 4a0a00473045022100d5949f4d793b1fae53a0e7f744d553d670d6e7f4887596e71069567b8baf54b70220059e1a98658807edc57d8e44210f799ee4f3497de6582919ed17b52cc104cbb3:922c64590222798bb761d5b6d8e72950
+# digest: 490a0046304402202bcb5287760a85a54f2004268c0dd4657eead825ac3a86a2d1c559418abde6320220435445cd73839874e058d0031f11bbb8fbe3b05248d05c3a5e91ea390702585c:922c64590222798bb761d5b6d8e72950
