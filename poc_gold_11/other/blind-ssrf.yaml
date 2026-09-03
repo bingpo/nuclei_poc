@@ -1,4 +1,4 @@
-id: 0x127
+id: 0x002
 
 info:
   name: Blind SSRF
@@ -8,7 +8,8 @@ info:
 requests:
   - raw:
     - |+
-      GET {{Scheme}}://{{Host}}.{{Port}}.BSSRF-127.{{MY-DOMAIN}}/ HTTP/0.9
+      GET {{BaseURL}} HTTP/1.1
+      Host: {{Host}}.{{Port}}.BSSRF-002.{{MY-DOMAIN}}
       Cache-Control: no-transform
       User-Agent: Mozilla/5.0 (Windows NT 10.0; rv:68.0) Gecko/20100101 Firefox/68.0
       Accept-Encoding: gzip, deflate
