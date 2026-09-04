@@ -1,1 +1,1 @@
-["azure-redis-nonssl-port-disabled.yaml","redis-hll-exploit.yaml","redis-weak-credentials.yaml"]
+["redis-hll-exploit.yaml","redis-weak-credentials.yaml"]
