@@ -11,7 +11,7 @@ info:
     vendor: gitlab
     product: gitlab
     shodan-query: http.title:"GitLab"
-  tags: gitlab,misconfig
+  tags: gitlab,misconfig,vuln
 
 http:
   - method: GET
@@ -40,4 +40,4 @@ http:
         negative: true
         words:
           - '<meta content="GitLab.com" property="og:description">'
-# digest: 490a0046304402202f565d51f08e209885ab5d657a6b5aaa5605d0ff11e9af9b4c33fa01cd9a9805022059a3443f0d56215d9d7d9b86c8a21d03b2a7e56748bdb7a66bd22ca3f54a9514:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a00473045022062b8db9baa3d5d313d3ae13c53a7227a7ee19d26050ef100a939cb0ab4cd4157022100d0f23da59efb040286c83a011bbffc59e6af30aeb1b93f8973c1521e4d95ee65:922c64590222798bb761d5b6d8e72950

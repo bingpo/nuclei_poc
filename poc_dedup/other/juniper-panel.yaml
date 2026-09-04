@@ -15,7 +15,7 @@ info:
     verified: true
     max-request: 1
     shodan-query: http.title:"Juniper Web Device Manager"
-  tags: panel,juniper,vpn,login
+  tags: panel,juniper,vpn,login,discovery
 
 http:
   - method: GET
@@ -42,4 +42,4 @@ http:
         group: 1
         regex:
           - 'var modelphpStr = "(.*?)";'
-# digest: 4b0a00483046022100805952728f7a4f23b982f4e63e04186b4cac86622fabd6542c18da4cdb0280de022100efd905866fa3451c4a3fd4d8473b37d9cdc9ad91bba67aba7bff863982cb7848:922c64590222798bb761d5b6d8e72950
+# digest: 4b0a00483046022100ccf8d2bedf18e1872de58486e0dd50953ec2796c81b7c7c57ef28f633ed937ea022100ac1e94db852002baec8d3d4e17c1bd909dbc415ac0438b9904f4f48e8aa60bba:922c64590222798bb761d5b6d8e72950

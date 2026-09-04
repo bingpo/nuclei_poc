@@ -9,9 +9,9 @@ info:
     cvss-metrics: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N
     cwe-id: CWE-200
   metadata:
-    fofa-query: title="CaseManager"
     max-request: 1
-  tags: casemanager,panel
+    fofa-query: title="CaseManager"
+  tags: casemanager,panel,discovery
 
 http:
   - method: GET
@@ -27,4 +27,4 @@ http:
       - type: status
         status:
           - 200
-# digest: 4b0a004830460221008447814425311e3a8a6362ed6be13f0bbb83b1e9fb7bb6e77b6d19b841ae8e2202210092e4a35f8947d75f884dcff402b9bb9c480035d2e1acf044645fb1a9d58e35ad:922c64590222798bb761d5b6d8e72950
+# digest: 490a0046304402204538998e9c310d5d8bd2d3e953b5cb49ff033edc95f9d5e7bf95f5c38eeb4e78022044a727aa958e600018ea10d4724e74790041fa97767bf915fb66208316287907:922c64590222798bb761d5b6d8e72950

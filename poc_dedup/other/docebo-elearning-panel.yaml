@@ -8,11 +8,14 @@ info:
   classification:
     cvss-metrics: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N
     cwe-id: CWE-200
+    cpe: cpe:2.3:a:docebo:docebo:*:*:*:*:*:*:*:*
   metadata:
-    fofa-query: title="Docebo E-learning"
-    max-request: 1
     verified: true
-  tags: panel,docebo
+    max-request: 1
+    fofa-query: title="Docebo E-learning"
+    product: docebo
+    vendor: docebo
+  tags: panel,docebo,discovery
 
 http:
   - method: GET
@@ -29,4 +32,4 @@ http:
       - type: status
         status:
           - 200
-# digest: 4a0a00473045022010bd0422bd48230d9f4b376bfd14fc999a6f290389c40d18d79c6e60d6d5ecc7022100ea449a06b2e0b39439d0e310f6b2233582a7a21589db52c6134fe148719018d3:922c64590222798bb761d5b6d8e72950
+# digest: 490a00463044022021678e55e4fe4deb3fdf4a8510711badf295fd5e868adbf9c2637d0dcd13c53d02207a9267b84fc1c49ea0e87c0c7d56684a133225b4ea619c3dd4c505743fce9a24:922c64590222798bb761d5b6d8e72950

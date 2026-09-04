@@ -1,1 +1,1 @@
-["header-blind-ssrf.yaml","header-command-injection.yaml"]
+["Header-Blind-SQL-Injection.yaml","clockwork-php-header.yaml","header-based-blind-sqli3.yaml","header-blind-xss-injection.yaml","header-reflection.yaml","header-sqli-1.yaml","header-time-sqli.yaml","reflect-xss-header.yaml"]
