@@ -12,8 +12,11 @@ info:
     cvss-score: 8.3
     cwe-id: CWE-522
   metadata:
+    max-request: 1
     shodan-query: pentaho
-  tags: pentaho,default-login
+    product: vantara_pentaho
+    vendor: hitachi
+  tags: pentaho,default-login,vuln
 
 http:
   - raw:
@@ -43,5 +46,4 @@ http:
       - type: status
         status:
           - 302
-
-# Enhanced by mp on 2022/03/10
+# digest: 490a0046304402206144b813c00018ee966cb76c87045507479c3c167048e19a931a55cc1ab919aa0220396895f228aa6436832bc129cedf69ff3349104397104d875f8a1fb359894ca8:922c64590222798bb761d5b6d8e72950
