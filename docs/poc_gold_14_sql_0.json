@@ -1,1 +1,1 @@
-["E-message-database.yaml","cobubrazor_v8-commonDbfix-info.yaml","database-error.yaml","database-username-and-password.yaml","db-schema.yaml","springboot-h2-db-rce.yaml","yongyou-jdbcRead.yaml"]
+["E-message-database.yaml","cobubrazor_v8-commonDbfix-info.yaml","influxdb-version.yaml","odoo-database-manager.yaml","opentsdb-status.yaml","yongyou-jdbcRead.yaml"]
