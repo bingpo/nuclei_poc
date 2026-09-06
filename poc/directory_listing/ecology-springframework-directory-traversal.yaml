@@ -8,10 +8,10 @@ info:
   classification:
     cvss-metrics: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
     cvss-score: 7.5
-    cwe-id: CWE-23
+    cwe-id: CWE-22
   metadata:
     max-request: 1
-  tags: ecology,springframework,lfi,vuln
+  tags: ecology,springframework,lfi
 
 http:
   - method: GET
@@ -28,4 +28,4 @@ http:
         words:
           - "<url-pattern>/weaver/"
         part: body
-# digest: 4a0a0047304502205f6c7efd01bc3cecc1e8c97c2791f32504dc5b09e24e67aff5d7d3af26e1bcb9022100a01dbf76b574c6627241262acd4c4a2094b50422b3bc955c72c6442c9fe47df7:922c64590222798bb761d5b6d8e72950
+# digest: 4b0a00483046022100e676868784bfc802857cc1cf84bb2fdfaa9a7d788e5d8886cf5241f73b6e909e022100d94cc0a05f1aea9fe65f1dc06300dc81a96aa4e8de558a29e356838273db3f9b:922c64590222798bb761d5b6d8e72950

@@ -11,10 +11,10 @@ info:
   classification:
     cvss-metrics: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
     cvss-score: 10
-    cwe-id: CWE-23
+    cwe-id: CWE-77
   metadata:
     max-request: 1
-  tags: tongda,lfi,vuln
+  tags: tongda,lfi
 
 http:
   - raw:
@@ -42,4 +42,4 @@ http:
       - type: status
         status:
           - 200
-# digest: 4a0a00473045022100e7f1b2d414fc001d80d09403cfd712021732e10bb2686db6bcc8a5498110c85c0220318a978c5bdeca559078de84676abc1af32ebfe314d38069b4c876f9ae17a659:922c64590222798bb761d5b6d8e72950
+# digest: 490a00463044022069db3d1b6e6cb5f8a5ca0e7f745e133f4d5ddfaeb365d295839bb7c01adf8d43022049e193b6f6be0f7d39c3ca0420fa455813f16897e6505e80e27dbb9a4005f597:922c64590222798bb761d5b6d8e72950

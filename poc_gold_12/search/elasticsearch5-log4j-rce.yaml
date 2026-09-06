@@ -14,7 +14,7 @@ info:
     cvss-metrics: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
     cvss-score: 10
     cve-id: CVE-2021-44228
-    cwe-id: CWE-77,CWE-502
+    cwe-id: CWE-77
     cpe: cpe:2.3:a:elastic:elasticsearch:*:*:*:*:*:*:*:*
   metadata:
     verified: true
@@ -22,7 +22,7 @@ info:
     shodan-query: elastic indices
     product: elasticsearch
     vendor: elastic
-  tags: jndi,log4j,rce,oast,elasticsearch,cve,cve2021,kev,vuln
+  tags: jndi,log4j,rce,oast,elasticsearch,cve,cve2021,kev
 variables:
   rand1: '{{rand_int(111, 999)}}'
   rand2: '{{rand_int(111, 999)}}'
@@ -68,4 +68,4 @@ http:
         group: 1
         regex:
           - '\d{6}\.([a-zA-Z0-9\.\-]+)\.([a-z0-9]+)\.([a-z0-9]+)\.([a-z0-9]+)\.\w+'
-# digest: 4a0a00473045022001dcf67039140bb0dfa1b432c959754ee55b50d12fbd603c659d8a5cfb0c8ae60221008f79d0d40ac7066990152222d4532605e3ad7c4d289c1d95bb9381613313a802:922c64590222798bb761d5b6d8e72950
+# digest: 490a0046304402203cff483778e24543f54a10477d66036b1f788dd37e2dc7a5f8b86e4ada4c88ff022003cc668aed028871d4e376251bbe6dccbf0e21713b4806ece192652c86f8c585:922c64590222798bb761d5b6d8e72950

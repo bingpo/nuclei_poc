@@ -9,10 +9,10 @@ info:
   classification:
     cvss-metrics: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
     cvss-score: 7.5
-    cwe-id: CWE-23,CWE-73
+    cwe-id: CWE-22
   metadata:
     max-request: 22
-  tags: azure,windows,lfi,generic,vuln
+  tags: azure,windows,lfi,generic
 
 http:
   - method: GET
@@ -52,4 +52,4 @@ http:
           - "fonts"
           - "extensions"
         condition: and
-# digest: 4a0a00473045022064729254146130888cffa96f92b740ef96c9a1699d3cebe54e949698d846f581022100bb1936bf9ad769b512db311a584e5df7f0208b08628839fe70839102b9dba890:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a00473045022100b462767abf9531d8c6b99a271deb4c5d77e84037e508d3c901e6da13d08b6f0c022015d877706e3b3d94ffe600c194bb8c3cc66d30e7809ac108446cdeb9aa306829:922c64590222798bb761d5b6d8e72950
