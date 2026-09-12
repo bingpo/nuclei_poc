@@ -1,1 +1,1 @@
-["exposed-kibana1.yaml","kibana-unauth.yaml","logstash-log4j-rce.yaml"]
+["error-based-sql-injection.yaml","kibana-panel.yaml","logstash-log4j-rce.yaml"]
