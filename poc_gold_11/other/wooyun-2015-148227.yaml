@@ -10,10 +10,10 @@ info:
   classification:
     cvss-metrics: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
     cvss-score: 7.5
-    cwe-id: CWE-22
+    cwe-id: CWE-22,CWE-73
   metadata:
     max-request: 1
-  tags: seeyon,wooyun,lfi,zhiyuan
+  tags: seeyon,wooyun,lfi,zhiyuan,vuln
 
 http:
   - method: GET
@@ -35,4 +35,4 @@ http:
         part: header
         words:
           - "application/xml"
-# digest: 4b0a00483046022100a7d05e50ef8085237c8374a11f89e4ea00cac8c1311353d81edf61472af65ba8022100b9640be9d0a79f45650825ab8a1514a1b67d2f41080b7579bc264c7257f7c726:922c64590222798bb761d5b6d8e72950
+# digest: 4b0a0048304602210094c949709b8ac8140faf41c13f5bd751f8008332f1c64df06cd52ff7ef25704a022100a7323a9f602edd7e4c57b9a949897203157b2ff7ede686062e1afc37dcda8642:922c64590222798bb761d5b6d8e72950
