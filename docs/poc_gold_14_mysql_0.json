@@ -1,1 +1,1 @@
-["ScanMySQLiErrorBased.yaml","cyberpanel-upgrademysqlstatus-rce.yaml","mysqld-exporter-metrics.yaml"]
+["ScanMySQLiErrorBased.yaml","exposed-mysql-initial.yaml"]
