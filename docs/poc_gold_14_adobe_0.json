@@ -1,1 +1,1 @@
-["aem-anonymous-write.yaml","aem-fuzz.yaml","aem-xss.yaml"]
+["aem-anonymous-write.yaml","aem-list-custom.yaml","servudaemon-ini.yaml"]
