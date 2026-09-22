@@ -12,10 +12,14 @@ info:
     cvss-metrics: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:L
     cvss-score: 8.3
     cwe-id: CWE-522
+    cpe: cpe:2.3:h:samsung:scx-6555n:*:*:*:*:*:*:*:*
   metadata:
     verified: true
+    max-request: 1
     shodan-query: title:"SyncThru Web Service"
-  tags: default-login,iot,samsung,printer
+    product: scx-6555n
+    vendor: samsung
+  tags: default-login,iot,samsung,printer,intrusive,vuln
 
 http:
   - raw:
@@ -49,5 +53,4 @@ http:
       - type: status
         status:
           - 200
-
-# Enhanced by md on 2023/01/09
+# digest: 4a0a004730450221009207c53654561f0a33b3d320b37a128740883c667165dc29d54c457fbc3950690220450583d5bcf6db13297b7e509f235253a48e0d5310fa2abf3d5ae19d59fb2b33:922c64590222798bb761d5b6d8e72950
