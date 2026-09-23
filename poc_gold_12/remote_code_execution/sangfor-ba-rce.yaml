@@ -11,12 +11,12 @@ info:
   classification:
     cvss-metrics: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
     cvss-score: 10
-    cwe-id: CWE-78
+    cwe-id: CWE-77
   metadata:
     verified: true
     max-request: 1
     fofa-query: app="sangfor"
-  tags: rce,sangfor,intrusive,vuln
+  tags: rce,sangfor,intrusive
 
 http:
   - method: GET
@@ -33,4 +33,4 @@ http:
       - type: status
         status:
           - 200
-# digest: 4a0a0047304502204cdd56a37f5dc71f89960c85d22cdc6ad73bfc76e62b78684922d1a0c48033a80221008b19c02f6b7d766de66aee436b6e52d81b575f7b18fa32e63247c93f081b9aab:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a00473045022100c6dc32e396cc76c889df577ff84726b25ec3bf9e987485cd979b1b14e0c4e6970220499a29db08e3b18f6cf7918b552a6049e730df48f95e15a5696eb48019ddbbbd:922c64590222798bb761d5b6d8e72950

@@ -11,9 +11,7 @@ info:
     cvss-metrics: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:L
     cvss-score: 8.3
     cwe-id: CWE-522
-  metadata:
-    max-request: 1
-  tags: xerox,default-login,intrusive,vuln
+  tags: xerox,default-login
 
 http:
   - raw:
@@ -51,4 +49,5 @@ http:
           - "errmsg"
         condition: or
         negative: true
-# digest: 4a0a0047304502200f072067f69b3b0cec52c18dd07612b320dde3b61faa1ee9c6107a0c1d50ebf3022100dcecdfa5fa0cac4e477877e3d1f15fe7d127eb4235087e227dd2d543800d94b3:922c64590222798bb761d5b6d8e72950
+
+# Enhanced by mp on 2022/03/13

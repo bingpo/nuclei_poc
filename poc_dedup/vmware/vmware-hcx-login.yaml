@@ -15,7 +15,7 @@ info:
     shodan-query: title:"VMware HCX"
     product: vmware_hcx
     vendor: vmware
-  tags: panel,vmware,discovery
+  tags: panel,vmware
 
 http:
   - method: GET
@@ -32,4 +32,4 @@ http:
       - type: status
         status:
           - 200
-# digest: 4a0a00473045022068b12ee3a04bac3ab9a02d800b47bd931720bd5d536c6b051efd51bcd7965d75022100988f3fb2b60bea9901e55fbab6cf3ad9f87fb6b2e0b9c938af4787f168f5e215:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a004730450221009af6f53194d64d9ba61ade414e8ccad66e8dce932a497f8b3332b1c01879f2f802200a80f6a6b744698c3ab855b77ab4d911eb0e40c3e393a48dbbe5f03fff3a0057:922c64590222798bb761d5b6d8e72950

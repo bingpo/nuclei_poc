@@ -1,1 +1,1 @@
-["kinsta-nginx-cache-purge.yaml","nginx_Misconfiguration.yaml"]
+["default-nginx-page.yaml","git-config-nginxoffbyslash-2.yaml","git-config-nginxoffbyslash-8.yaml","git-config-nginxoffbyslash.yaml","git-config-nginxoffbyslash6.yaml","kinsta-nginx-cache-purge.yaml","nginx-merge-slashes-path-traversal2.yaml","nginx-merge-slashes-path-traversal3.yaml","nginx-module-vts-xss.yaml"]
