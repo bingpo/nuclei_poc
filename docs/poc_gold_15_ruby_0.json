@@ -1,1 +1,1 @@
-["rails-routes-exposure.yaml","rails-secret-token-disclosure.yaml","rails-secret-token.yaml"]
+["grails-database-admin-console.yaml","rails6-xss.yaml"]
