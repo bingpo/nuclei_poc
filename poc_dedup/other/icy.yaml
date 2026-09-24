@@ -1,16 +1,16 @@
 id: icy
 info:
-  name: Icecast streaming media server
+  name: SHOUTcast Distributed Network Audio Server
   author: nmap,cn-kali-team
   tags: detect,tech,icy,service
   severity: info
   metadata:
-    info: Bitrate $1
-    product: icecast
+    operating_system: BSD
+    product: dnas
     rarity: 1
-    vendor: xiph
+    vendor: shoutcast
     verified: true
-    version: $2
+    version: $1
 tcp:
 - name: get-request
   inputs:
@@ -22,4 +22,4 @@ tcp:
   - name: icy
     type: regex
     regex:
-    - '(?i)^HTTP/1\.0 200 OK\r\nContent-Type: audio/mpeg\r\nicy-br:([\d.]+)\r\n(?:[^\r\n]+\r\n)*?Server: Icecast ([\d.]+)\r\n'
+    - (?i)^(?:HTTP/1\.0|ICY) \d\d\d .*\r\nicy-notice1:<BR>SHOUTcast DNAS/posix\(bsd\) v([\d.]+)<BR>\r\n

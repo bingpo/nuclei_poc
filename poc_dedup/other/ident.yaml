@@ -1,11 +1,10 @@
 id: ident
 info:
-  name: CacheFlow identd
+  name: widentd
   author: nmap,cn-kali-team
   tags: detect,tech,ident,service
   severity: info
   metadata:
-    operating_system: CacheOS
     rarity: 1
 tcp:
 - name: generic-lines
@@ -18,4 +17,4 @@ tcp:
   - name: ident
     type: regex
     regex:
-    - '^: USERID : UNIX : CacheFlow Server\r\n'
+    - '^1 , 1 : USERID : OTHER : chuck-the-bsd-deamon\r\n$'

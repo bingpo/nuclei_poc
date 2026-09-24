@@ -1,12 +1,13 @@
 id: microsoft-ds
 info:
-  name: EMC Celerra NAS device smbd
+  name: Microsoft Windows 7 - 10 microsoft-ds
   author: nmap,cn-kali-team
   tags: detect,tech,microsoft-ds,service
   severity: info
   metadata:
     hostname: $P(2)
-    info: 'Primary domain: $P(1)'
+    info: 'workgroup: $P(1)'
+    operating_system: Windows
     rarity: 4
 tcp:
 - name: smbprog-neg
@@ -19,4 +20,4 @@ tcp:
   - name: microsoft-ds
     type: regex
     regex:
-    - (?i)^\0...\xffSMBr\0\0\0\0\x81\x01\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0..\0\0\x01\0\x11\x06\0\x03\x7f\0\x01\0\xff\xff\0\0\xff\xff\0\0\0\0\0\0\xfd\xb3\0\0..........\x08\x22\0........((?:\w\0)+)\0\0((?:\w\0)+)\0\0$
+    - (?i)^\x00\x00\x00.\xffSMBr\x00\x00\x00\x00\x88\x01@\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00@\x06\x00\x00\x01\x00\x11\x07\x00.2\x00\x01\x00\x04\x11\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\xfc\xe3\x01\x00.{21}(.*)\x00\x00(.*)\x00\x00

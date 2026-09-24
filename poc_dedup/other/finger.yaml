@@ -1,15 +1,13 @@
 id: finger
 info:
-  name: efingerd
+  name: Dell $1 laser printer fingerd
   author: nmap,cn-kali-team
   tags: detect,tech,finger,service
   severity: info
   metadata:
-    info: who -uHw
-    product: efingerd
+    device_type: printer
+    info: 'Status: $2'
     rarity: 1
-    vendor: radovan_garabik
-    verified: true
 tcp:
 - name: generic-lines
   inputs:
@@ -21,4 +19,4 @@ tcp:
   - name: finger
     type: regex
     regex:
-    - ^\nHello [\w.@-]*,\nusers currently logged in are:\n\nNAME       LINE         TIME             IDLE          PID COMMENT\n\n\r\n
+    - '^\r\nIntegrated port\r\nPrinter Type: Dell Laser Printer ([-\w+.]+)\r\nPrint Job Status: (.*)\r\n'

@@ -1,11 +1,11 @@
 id: ftp
 info:
-  name: Linksys WRT54Gv5 WAP ftpd
+  name: Canon imageRUNNER C2880 printer ftpd
   author: nmap,cn-kali-team
   tags: detect,tech,ftp,service
   severity: info
   metadata:
-    device_type: WAP
+    device_type: printer
     rarity: 1
 tcp:
 - name: generic-lines
@@ -18,4 +18,4 @@ tcp:
   - name: ftp
     type: regex
     regex:
-    - '^220 ftp server ready\.\r\n500 Unknown command: \"\"\r\n500 Unknown command: \"\"\r\n'
+    - ^220 Connection established\.\r\n502  command not recognized\.\r\n502  command not recognized\.\r\n

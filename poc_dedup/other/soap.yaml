@@ -5,6 +5,8 @@ info:
   tags: detect,tech,soap,service
   severity: info
   metadata:
+    device_type: WAP
+    info: Sagem F@st 3464 WAP soap
     product: gsoap
     rarity: 1
     vendor: genivia
@@ -21,4 +23,4 @@ tcp:
   - name: soap
     type: regex
     regex:
-    - '(?i)^HTTP/1\.1 \d\d\d (?:[^\r\n]*\r\n(?!\r\n))*?Server: gSOAP/([\d.]+)\r\n'
+    - '(?i)^HTTP/1\.1 401 Unauthorized\r\nWWW-Authenticate: Digest realm=\"gSOAP_Web_Service\",.*Server: gSOAP/([\d.]+)\r\n.*<SOAP-ENV:Fault><faultcode>Client</faultcode><faultstring>HTTP Error: 401 Unauthorized</faultstring></SOAP-ENV:Fault>'

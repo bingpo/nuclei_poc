@@ -1,1 +1,1 @@
-["docker-registry-1.yaml","dockercfg-config2.yaml","dockerfile-hidden-disclosure.yaml","exposed-kubernetes-dashboard-ultra-advanced.yaml","kubernetes-pods-api1.yaml","kubernetes-version.yaml","misconfigured-docker.yaml"]
+["docker-registry-1.yaml","dockercfg.yaml","dozzle-container-logs.yaml","exposed-kubernetes-dashboard-ultra-advanced.yaml"]
