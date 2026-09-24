@@ -10,7 +10,7 @@ info:
   metadata:
     verified: true
     max-request: 1
-  tags: etsy,exposure,tokens,accesskey,vuln
+  tags: etsy,exposure,tokens,accesskey
 
 http:
   - method: GET
