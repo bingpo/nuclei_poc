@@ -19,4 +19,4 @@ tcp:
   - name: klogin
     type: regex
     regex:
-    - '^\x01eklogin: Kerberos authentication failed\.\r\n'
+    - '^\x01eklogind: Kerberos authentication failed\.\r\n'

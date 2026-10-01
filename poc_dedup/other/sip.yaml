@@ -1,17 +1,16 @@
 id: sip
 info:
-  name: Polycom SoundPoint $1
+  name: SpeedTouch $1 SIP
   author: nmap,cn-kali-team
   tags: detect,tech,sip,service
   severity: info
   metadata:
-    device_type: VoIP phone
+    device_type: broadband router
     fallback:
     - get-request
     - httpoptions
-    info: 'MAC: $3'
+    info: serial $2
     rarity: 5
-    version: $2
 tcp:
 - name: sipoptions
   inputs:
@@ -23,4 +22,4 @@ tcp:
   - name: sip
     type: regex
     regex:
-    - '(?i)^SIP/2\.0 (?:[^\r\n]*\r\n(?!\r\n))*?User-Agent: PolycomSoundPointIP-SPIP_(\d+)-UA/([\d.]+)_(\w+)\r\n'
+    - '(?i)^SIP/2\.0 500 Server Internal Error\r\n(?:[^\r\n]+\r\n)*?User-Agent: SpeedTouch (\w+)\r\nX-Serialnumber: (\w+)\r\n'

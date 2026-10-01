@@ -1,13 +1,17 @@
 id: soap
 info:
-  name: D-Link $1 soap
+  name: gSOAP
   author: nmap,cn-kali-team
   tags: detect,tech,soap,service
   severity: info
   metadata:
-    device_type: WAP
+    hostname: $2
+    info: Good Messaging Server gddomsyncsrv
+    product: gsoap
     rarity: 1
-    version: $2
+    vendor: genivia
+    verified: true
+    version: $1
 tcp:
 - name: get-request
   inputs:
@@ -19,4 +23,4 @@ tcp:
   - name: soap
     type: regex
     regex:
-    - '(?i)^HTTP/1\.1  200 OK\r\nContent-Type: text/xml; charset=utf-8: \r\nConnection: close\r\n\r\n<\?xml version=\"1\.0\" encoding=\"UTF-8\" standalone=\"yes\"\?>.*<ModelDescription>Xtreme N GIGABIT Router</ModelDescription><ModelName>(DIR-655) \w+</ModelName><FirmwareVersion>([^<]+)</FirmwareVersion>'
+    - '(?i)^HTTP/1\.0 500 Internal Server Error\r\nServer: gSOAP/([\w._-]+)\r\n.* xmlns:gmmiws=\"https://([\w._-]+):\d+/glsinternal\.wsdl\" .*<faultstring>HTTP GET method not implemented</faultstring>'
