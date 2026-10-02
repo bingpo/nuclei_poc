@@ -1,19 +1,22 @@
 id: weblogic-weak-login
+
 info:
   name: WebLogic Default Login
   author: pdteam
-  description: WebLogic default login credentials were discovered.
   severity: high
-  tags: default-login,weblogic
+  description: WebLogic default login credentials were discovered.
   reference:
     - https://github.com/vulhub/vulhub/tree/master/weblogic/weak_password
     - https://www.s-squaresystems.com/weblogic-default-admin-users-password-change/
   classification:
     cvss-metrics: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:L
     cvss-score: 8.3
-    cve-id:
     cwe-id: CWE-522
-requests:
+  metadata:
+    max-request: 16
+  tags: default-login,weblogic,vulhub
+
+http:
   - raw:
       - |
         GET /console/ HTTP/1.1
@@ -24,6 +27,7 @@ requests:
         Content-Type: application/x-www-form-urlencoded
 
         j_username={{ username }}&j_password={{ password }}&j_character_encoding=UTF-8
+
     attack: pitchfork
     payloads:
       username:
@@ -45,7 +49,7 @@ requests:
         - security
         - password
     stop-at-first-match: true
-    cookie-reuse: true
+
     matchers-condition: and
     matchers:
       - type: word
@@ -54,8 +58,8 @@ requests:
           - "/console/index.jsp"
           - "ADMINCONSOLESESSION"
         condition: and
+
       - type: status
         status:
           - 302
-
-# Enhanced by mp on 2022/03/14
+# digest: 4a0a00473045022100deb7a387ad6d121d371ab3d8a6426b4a5d0c99945f7f1d379adc654a86b792d0022038f1c71653428ebe327d89b4f37e87eb26d993baef6e59b931e6d6150e194f8b:922c64590222798bb761d5b6d8e72950
