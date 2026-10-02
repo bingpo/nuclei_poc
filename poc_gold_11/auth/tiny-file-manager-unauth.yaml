@@ -10,7 +10,7 @@ info:
     max-request: 1
     shodan-query: title:"Tiny File Manager"
     zoomeye-query: app="Tiny File Manager"
-  tags: misconfig,filemanager,detect,vuln
+  tags: misconfig,filemanager,detect
 
 http:
   - method: GET
