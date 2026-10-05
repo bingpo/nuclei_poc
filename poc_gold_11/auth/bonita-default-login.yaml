@@ -10,7 +10,7 @@ info:
     verified: true
     max-request: 1
     shodan-query: http.favicon.hash:-1197926023
-  tags: bonita,default-login,misconfig,vuln
+  tags: bonita,default-login,misconfig
 
 variables:
   username: install

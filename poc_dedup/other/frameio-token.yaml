@@ -10,7 +10,7 @@ info:
   metadata:
     verified: true
     max-request: 1
-  tags: frameio,exposure,tokens,vuln
+  tags: frameio,exposure,tokens
 
 http:
   - method: GET
